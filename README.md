@@ -1,70 +1,124 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OLX Clone Project
 
-## Available Scripts
+This project is a simple web application inspired by OLX, built with **React**. It includes features like recommendations, a homepage layout, and context management using **Context API**.
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## Table of Contents
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Scripts](#scripts)
+5. [Dependencies](#dependencies)
+6. [Project Structure](#project-structure)
+7. [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
+- **Dynamic Recommendations**: Uses `RecommendationsContext` to manage and display recommendation data.
+- **Reusable Components**: Organized folder structure with reusable components like `Header`, `Banner`, `Posts`, and `Footer`.
+- **React Context API**: Global state management for seamless sharing of data across components.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+### Prerequisites
+- Node.js (v14 or later recommended)
+- npm (v6 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd olx
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `yarn eject`
+### Run the development server
+Start the app in development mode:
+```bash
+npm start
+```
+By default, the app will be available at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Build for production
+Generate a production-ready build:
+```bash
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Scripts
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The following scripts are available in the project:
 
-## Learn More
+| Script        | Description                                 |
+|---------------|---------------------------------------------|
+| `npm start`   | Runs the app in development mode.           |
+| `npm run build` | Builds the app for production.             |
+| `npm test`    | Launches the test runner.                  |
+| `npm run eject` | Ejects the app for customization.          |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dependencies
 
-### Code Splitting
+The project uses the following major dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Dependency             | Version    | Description                                   |
+|-------------------------|------------|-----------------------------------------------|
+| `react`                | ^17.0.2    | A JavaScript library for building UIs.        |
+| `react-router-dom`     | ^5.2.0     | Declarative routing for React applications.   |
+| `react-scripts`        | ^5.0.1     | Scripts for building and running React apps.  |
+| `@testing-library/react` | ^11.1.0 | Utilities for testing React components.       |
 
-### Analyzing the Bundle Size
+To see all dependencies, check the `package.json` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Here’s an overview of the key files and folders:
 
-### Advanced Configuration
+```
+olx/
+├── public/
+│   └── index.html         # Main HTML file
+├── src/
+│   ├── Components/
+│   │   ├── Header/        # Header component
+│   │   ├── Banner/        # Banner component
+│   │   ├── Posts/         # Posts (recommendations) component
+│   │   └── Footer/        # Footer component
+│   ├── Pages/
+│   │   └── Home.js        # Home page layout
+│   ├── RecommendationsContext.js # Context for recommendations
+│   ├── App.js             # Main App component
+│   ├── index.js           # Entry point of the app
+│   └── assets/            # Static assets (e.g., JSON data, images)
+├── package.json           # Project metadata and dependencies
+├── .gitignore             # Files to ignore in version control
+└── README.md              # Project documentation
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code, but attribution is appreciated.
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
