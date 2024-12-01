@@ -1,29 +1,34 @@
-import React from 'react';
+import React from "react";
+import { useParams } from "react-router-dom";
 
-import './View.css';
 function View() {
-  return (
+  const { id } = useParams();
+  const recommendations =
+    JSON.parse(localStorage.getItem("recommendations")) || [];
+  const product = recommendations.find((item) => item.id === id);
+
+  return product ? (
     <div className="viewParentDiv">
       <div className="imageShowDiv">
-        <img
-          src="../../../Images/R15V3.jpg"
-          alt=""
-        />
+        <img src={product.image} alt={product.title} />
       </div>
       <div className="rightSection">
         <div className="productDetails">
-          <p>&#x20B9; 250000 </p>
-          <span>YAMAHA R15V3</span>
-          <p>Two Wheeler</p>
-          <span>Tue May 04 2021</span>
+          <p>₹ {product.price}</p>
+          <span>{product.title}</span>
+          <p>{product.category}</p>
+          <span>{product.date}</span>
         </div>
         <div className="contactDetails">
           <p>Seller details</p>
-          <p>No name</p>
-          <p>1234567890</p>
+          <p>{product.sellerName}</p>
+          <p>{product.sellerContact}</p>
         </div>
       </div>
     </div>
+  ) : (
+    <p>Product not found</p>
   );
 }
+
 export default View;

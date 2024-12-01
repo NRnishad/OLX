@@ -1,6 +1,11 @@
 import React, { createContext, useState } from "react";
+
+// Create the Recommendations Context
 export const RecommendationsContext = createContext();
+
+// RecommendationsProvider component to wrap the app with context
 export const RecommendationsProvider = ({ children }) => {
+  // Initial recommendations state
   const [recommendations, setRecommendations] = useState([
     {
       id: 1,
@@ -76,8 +81,8 @@ export const RecommendationsProvider = ({ children }) => {
     },
     {
       id: 9,
-      price: "₹ 7,60,000",
-      title: "honda city (2017)",
+      price: "₹7,60,000",
+      title: "Honda City (2017)",
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "2 days ago",
       image:
@@ -86,7 +91,7 @@ export const RecommendationsProvider = ({ children }) => {
     {
       id: 10,
       price: "₹3,05,000",
-      title: "maruti suzuki swift dzire (2014)",
+      title: "Maruti Suzuki Swift Dzire (2014)",
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "Oct 30",
       image:
@@ -95,8 +100,12 @@ export const RecommendationsProvider = ({ children }) => {
   ]);
 
   return (
+    // Provide recommendations state and updater function to children
     <RecommendationsContext.Provider
-      value={{ recommendations, setRecommendations }}
+      value={{
+        recommendations,
+        setRecommendations,
+      }}
     >
       {children}
     </RecommendationsContext.Provider>

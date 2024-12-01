@@ -8,7 +8,11 @@ function Posts() {
   return (
     <div className="recommendations-grid">
       {recommendations.map((item) => (
-        <div key={item.id} className="card">
+        <div
+          key={item.id}
+          className="card"
+          onClick={() => (window.location.href = `/view/${item.id}`)}
+        >
           <img src={item.image} alt={item.title} className="card-image" />
           <div className="card-details">
             <h3 className="card-price">{item.price}</h3>

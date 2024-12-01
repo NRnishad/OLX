@@ -3,12 +3,28 @@ import './Create.css';
 import Header from '../Header/Header';
 
 const Create = () => {
+  const handleCreate = (e) => {
+    e.preventDefault();
+    const newCard = {
+      id: Date.now().toString(),
+      name: e.target.Name.value,
+      category: e.target.category.value,
+      price: e.target.Price.value,
+      image: "default-image-url", // Add file handling for dynamic images
+    };
+    const recommendations =
+      JSON.parse(localStorage.getItem("recommendations")) || [];
+    recommendations.push(newCard);
+    localStorage.setItem("recommendations", JSON.stringify(recommendations));
+    alert("Card created!");
+  };
+
   return (
     <Fragment>
       <Header />
       <card>
         <div className="centerDiv">
-          <form>
+          <form onSubmit={handleCreate}>
             <label htmlFor="fname">Name</label>
             <br />
             <input
@@ -40,7 +56,9 @@ const Create = () => {
             <br />
             <input type="file" />
             <br />
-            <button className="uploadBtn">upload and Submit</button>
+            <button className="uploadBtn" type="submit">
+              upload and Submit
+            </button>
           </form>
         </div>
       </card>
