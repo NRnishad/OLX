@@ -14,7 +14,10 @@ export const RecommendationsProvider = ({ children }) => {
       location: "AS-CHENIKAL, BELGAUM",
       daysAgo: "6 days ago",
       image:
-        "https://apollo.olx.in/v1/files/2fknrywrxtpf3-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/2fknrywrxtpf3-IN/image;s=780x0;q=60",
+        sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 2,
@@ -23,7 +26,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "RUDRAPUR, CHHATISGARH",
       daysAgo: "Aug 17",
       image:
-        "https://apollo.olx.in/v1/files/3qtqgc1mtq4y-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/3qtqgc1mtq4y-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 3,
@@ -32,7 +37,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "2 days ago",
       image:
-        "https://apollo.olx.in/v1/files/tkqicighgzvn-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/xdysn5ht9xbv-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 4,
@@ -41,7 +48,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "2 days ago",
       image:
-        "https://apollo.olx.in/v1/files/0vh0lh7wlvev2-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/0vh0lh7wlvev2-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 5,
@@ -50,7 +59,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "Oct 30",
       image:
-        "https://apollo.olx.in/v1/files/vcujvrydtjmk-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/vcujvrydtjmk-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 6,
@@ -59,7 +70,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "3 days ago",
       image:
-        "https://apollo.olx.in/v1/files/tc6sd6zfy1rh2-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/tc6sd6zfy1rh2-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 7,
@@ -68,7 +81,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "Yesterday",
       image:
-        "https://apollo.olx.in/v1/files/vu345qdh8aj31-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/vu345qdh8aj31-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 8,
@@ -77,7 +92,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "2 days ago",
       image:
-        "https://apollo.olx.in/v1/files/kg1gmr0vsitu-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/kg1gmr0vsitu-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 9,
@@ -86,7 +103,9 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "2 days ago",
       image:
-        "https://apollo.olx.in/v1/files/2u41w0tujewd2-IN/image;s=780x0;q=60",
+        "https://apollo.olx.in/v1/files/2u41w0tujewd2-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
     {
       id: 10,
@@ -95,8 +114,31 @@ export const RecommendationsProvider = ({ children }) => {
       location: "SAINIKPUR, MAHARASHTRA",
       daysAgo: "Oct 30",
       image:
-        "https://apollo.olx.in/v1/files/lbmc18dlr1052-IN/image;s=300x600;q=60",
+        "https://apollo.olx.in/v1/files/lbmc18dlr1052-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
+    },{
+      id: 9,
+      price: "₹2,60,000",
+      title: "maruti suzuki wagon r 1.0 (2015)",
+      location: "SAINIKPUR, MAHARASHTRA",
+      daysAgo: "2 days ago",
+      image:
+        "https://apollo.olx.in/v1/files/opadnrrsknc6-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
     },
+    {
+      id: 10,
+      price: "₹4,05,000",
+      title: "maruti suzuki wagon r 1.0 (2019)",
+      location: "SAINIKPUR, MAHARASHTRA",
+      daysAgo: "Oct 30",
+      image:
+        "https://apollo.olx.in/v1/files/e1q9pi0u7wkc3-IN/image;s=780x0;q=60", sellerName:"Suresh babu",
+        sellerContact:"9965853275 , 8569327456",
+        
+    }
   ]);
 
   return (

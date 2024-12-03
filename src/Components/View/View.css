@@ -1,50 +1,100 @@
+/* Parent container */
 .viewParentDiv {
-  padding-top: 4em;
+  padding: 2em 1em;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
 }
+
+/* Image container */
 .viewParentDiv .imageShowDiv {
-  padding: 16px;
-  width: 70vw;
+  flex: 1 1 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .viewParentDiv .imageShowDiv img {
-  width: 65vw;
-  height: 85vh;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Right section */
 .viewParentDiv .rightSection {
-  padding: 16px;
-  margin-top: 3em;
-  width: 30vw;
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
-.viewParentDiv .rightSection .productDetails :first-child {
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: #002f34;
-  font-size: 34px;
-  line-height: 32px;
-  margin-bottom: 20px;
-}
-
+/* Product details */
 .viewParentDiv .rightSection .productDetails {
-  border: 1px solid black;
-  padding: 6px;
-  border-radius: 6px;
-  margin-bottom: 2em;
-  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.viewParentDiv .rightSection .contactDetails {
-  border: 1px solid black;
-  padding: 6px;
-  border-radius: 6px;
+.viewParentDiv .rightSection .productDetails p,
+.viewParentDiv .rightSection .productDetails span {
+  margin: 0.5em 0;
 }
 
-.viewParentDiv .rightSection .contactDetails :first-child {
-  font-size: 20px;
-  line-height: 24px;
+.viewParentDiv .rightSection .productDetails p:first-child {
   font-weight: 700;
-  color: #002f34;
-  font-weight: 400;
-  padding: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Contact details */
+.viewParentDiv .rightSection .contactDetails {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.viewParentDiv .rightSection .contactDetails p {
+  margin: 0.5em 0;
+}
+
+.viewParentDiv .rightSection .contactDetails p:first-child {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .viewParentDiv {
+    flex-direction: column;
+  }
+
+  .viewParentDiv .imageShowDiv {
+    flex: 1 1 100%;
+  }
+
+  .viewParentDiv .imageShowDiv img {
+    max-height: 50vh;
+  }
+
+  .viewParentDiv .rightSection {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewParentDiv .imageShowDiv img {
+    max-height: 40vh;
+  }
+
+  .viewParentDiv .rightSection .productDetails p:first-child,
+  .viewParentDiv .rightSection .contactDetails p:first-child {
+    font-size: 1.2em;
+  }
 }
