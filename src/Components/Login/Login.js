@@ -9,14 +9,16 @@ function Login() {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const user = JSON.parse(localStorage.getItem("user"));
-
+  
     if (user && user.email === email && user.password === password) {
-      
-      window.location.href = "/Login";
+      user.isLoggedIn = true; // Set login status
+      localStorage.setItem("user", JSON.stringify(user));
+      window.location.href = "/"; // Redirect to the homepage
     } else {
       alert("Invalid credentials");
     }
   };
+  
 
   return (
     <div>

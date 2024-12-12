@@ -13,13 +13,13 @@ const handleSignup = (e) => {
     password: e.target.password.value,
   };
   localStorage.setItem("user", JSON.stringify(user));
-  window.location.href = "/";
+  window.location.href = "/login";
 };
 
   return (
     <div>
       <div className="signupParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img width="200px" alt='Logo' height="200px" src={Logo}></img>
         <form onSubmit={handleSignup}>
           <label htmlFor="fname">Username</label>
           <br />
@@ -40,9 +40,9 @@ const handleSignup = (e) => {
           <br />
           <button type="submit">Signup</button>
         </form>
-        <a>
-          <Link to="/">Login</Link>
-        </a>
+        
+          <Link to="/login">Login</Link>
+        
       </div>
     </div>
   );
